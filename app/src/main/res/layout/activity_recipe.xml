@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Recipe.RecipeActivity"
+    >
+    <ImageView
+        android:id="@+id/recipe_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:src="@drawable/woman"
+        android:scaleType="centerCrop"
+        android:foreground="@drawable/image_recipe_foreground"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/recipe_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="11dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="3sp"
+            android:textColor="#fff9fe"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/recipe_calories"
+            app:layout_constraintStart_toStartOf="@+id/recipe_calories"
+            tools:text="recipe name" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="2sp"
+            android:text=" gm"
+            android:textColor="#f9f9f9"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/recipe_fat"
+            app:layout_constraintStart_toEndOf="@+id/recipe_fat"
+            app:layout_constraintTop_toTopOf="@+id/recipe_fat" />
+
+        <TextView
+            android:id="@+id/recipe_fat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="20dp"
+            android:drawableStart="@drawable/small_red_circle"
+            android:drawablePadding="2dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="2sp"
+            android:textColor="#f9f9f9"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="40" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="2sp"
+            android:text=" gm"
+            android:textColor="#f9f9f9"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/recipe_carbs"
+            app:layout_constraintStart_toEndOf="@+id/recipe_carbs"
+            app:layout_constraintTop_toTopOf="@+id/recipe_carbs" />
+
+        <TextView
+            android:id="@+id/recipe_carbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:drawableStart="@drawable/small_gold_circle"
+            android:drawablePadding="2dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="2sp"
+            android:textColor="#f9f9f9"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView39"
+            app:layout_constraintStart_toEndOf="@+id/textView39"
+            app:layout_constraintTop_toTopOf="@+id/textView39"
+            tools:text="40" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="2sp"
+            android:text=" gm"
+            android:textColor="#f9f9f9"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/recipe_protien"
+            app:layout_constraintStart_toEndOf="@+id/recipe_protien"
+            app:layout_constraintTop_toTopOf="@+id/recipe_protien" />
+
+        <TextView
+            android:id="@+id/recipe_protien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:drawableStart="@drawable/small_green_circle"
+            android:drawablePadding="2dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="2sp"
+            android:textColor="#f9f9f9"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView41"
+            app:layout_constraintStart_toEndOf="@+id/textView41"
+            app:layout_constraintTop_toTopOf="@+id/textView41"
+            tools:text="40" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/fat"
+            android:textColor="#f9f9f9"
+            android:textSize="11sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/recipe_fat"
+            app:layout_constraintStart_toStartOf="@+id/recipe_fat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/carbs"
+            android:textColor="#f9f9f9"
+            android:textSize="11sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/recipe_carbs"
+            app:layout_constraintStart_toStartOf="@+id/recipe_carbs" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/protien"
+            android:textColor="#f9f9f9"
+            android:textSize="11sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/recipe_protien"
+            app:layout_constraintStart_toStartOf="@+id/recipe_protien" />
+
+        <TextView
+            android:id="@+id/recipe_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:drawableStart="@drawable/ic_path"
+            android:drawablePadding="4dp"
+            android:drawableTint="@android:color/white"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="7sp"
+            android:textColor="#fff9fe"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView44"
+            app:layout_constraintStart_toStartOf="@+id/textView44"
+            tools:text="500" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="7sp"
+            android:text="@string/kcal"
+            android:textColor="#fff9fe"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/recipe_calories"
+            app:layout_constraintStart_toEndOf="@+id/recipe_calories"
+            app:layout_constraintTop_toTopOf="@+id/recipe_calories" />
+
+        <ImageView
+            android:id="@+id/back_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
+        <ImageView
+            android:id="@+id/main_view_recipe"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_more"
+            android:tint="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.952"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.97">
+
+        </ImageView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

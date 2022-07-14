@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/confetti_container"
+    android:orientation="vertical">
+    <com.github.abdularis.buttonprogress.DownloadButtonProgress
+        android:id="@+id/progress_answer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="25dp"
+        app:finishIconDrawable="@drawable/ic_check"
+        app:cancelIconDrawable="@drawable/null_icon"
+        app:determinateBackgroundDrawable="@drawable/null_icon"
+        app:finishBackgroundDrawable="@drawable/null_icon"
+        app:progressDeterminateColor="@color/primaryColor"
+        app:state="FINISHED"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/finish"
+        android:textSize="18dp"
+        android:textColor="#233249"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="center"
+        android:text="@string/finish_description"
+        android:textSize="14dp"
+        android:textColor="#9EA1A7"/>
+    <Button
+        android:id="@+id/finish_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/login_button_background"
+        android:text="@string/continues"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+</LinearLayout>

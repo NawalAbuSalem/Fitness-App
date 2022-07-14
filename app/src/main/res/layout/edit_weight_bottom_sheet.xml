@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textColor="#274461"
+        android:text="Current weight"
+        android:layout_marginTop="40dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:clickable="false">
+
+        <ke.tang.ruler.RulerView
+            android:id="@+id/current_weight_ruler_picker"
+            style="@style/AppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            app:indicator="@null"
+            app:minValue="0"
+            app:maxValue="200"
+            android:textColor="#565656"
+            app:scaleColor="#f0f0f0"
+            app:rulerColor="#f0f0f0"
+            app:rulerSize="2dp"
+            app:scaleSize="1.5dp"
+            >
+        </ke.tang.ruler.RulerView>
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_drop_up"
+            android:tint="@color/fadedRed"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Kg"
+            android:textColor="@color/darkGreyBlue"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textColor="#274461"
+        android:text="Goal weight"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:clickable="false">
+
+        <ke.tang.ruler.RulerView
+            android:id="@+id/goal_weight_ruler_picker"
+            style="@style/AppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            app:indicator="@null"
+            app:minValue="0"
+            app:maxValue="200"
+            android:textColor="#565656"
+            app:scaleColor="#f0f0f0"
+            app:rulerColor="#f0f0f0"
+            app:rulerSize="2dp"
+            app:scaleSize="1.5dp"
+            >
+        </ke.tang.ruler.RulerView>
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_drop_up"
+            android:tint="@color/fadedRed"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Kg"
+            android:textColor="@color/darkGreyBlue"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#565656"
+            android:text="your ideal weight "
+            />
+
+        <TextView
+        android:id="@+id/ideal_weight_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="#274461"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="4sp"
+        android:layout_marginStart="8dp"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="#274461"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/kg"
+            android:layout_marginStart="2dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#565656"
+            android:text="BMI"
+            />
+
+        <TextView
+            android:id="@+id/bmi_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="#274461"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="4sp"
+            android:layout_marginStart="8dp"
+            />
+    </LinearLayout>
+    <Button
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:text="@string/submit"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/submit_new_Weight_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_background"/>
+</LinearLayout>

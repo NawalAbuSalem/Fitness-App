@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Views.WaterReminder.WaterTrackingActivity"
+    android:background="@android:color/white">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/water_track_cup"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="false"
+        app:lottie_colorFilter="#9210A5A5"
+        app:lottie_fileName="water_cup.json" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="26dp"
+        android:layout_height="1.5dp"
+        android:layout_marginBottom="39dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/water_track_cup"
+        app:layout_constraintEnd_toEndOf="@+id/water_track_cup"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="@+id/water_track_cup" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="26dp"
+        android:layout_height="1.5dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="35dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/view1"
+        app:layout_constraintStart_toStartOf="@+id/view1" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="26dp"
+        android:layout_height="1.5dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="35dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="26dp"
+        android:layout_height="1.5dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="35dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="@+id/view3" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="26dp"
+        android:layout_height="1.5dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="35dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="26dp"
+        android:layout_height="1.5dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="35dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintStart_toStartOf="@+id/view5" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="26dp"
+        android:layout_height="1.5dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="35dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/view6"
+        app:layout_constraintStart_toStartOf="@+id/view6" />
+
+    <TextView
+        android:id="@+id/one_cup_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3sp"
+        tools:text="300"
+        android:textColor="#274461"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view1"
+        app:layout_constraintStart_toStartOf="@+id/view1" />
+
+    <TextView
+        android:id="@+id/two_cup_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3sp"
+        tools:text="600"
+        android:textColor="#274461"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/three_cup_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3sp"
+        tools:text="900"
+        android:textColor="#274461"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/four_cup_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3sp"
+        tools:text="1200"
+        android:textColor="#274461"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4" />
+
+    <TextView
+        android:id="@+id/five_cup_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3sp"
+        tools:text="1500"
+        android:textColor="#274461"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintStart_toStartOf="@+id/view5" />
+
+    <TextView
+        android:id="@+id/six_cup_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3sp"
+        tools:text="1800"
+        android:textColor="#274461"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view6"
+        app:layout_constraintStart_toStartOf="@+id/view6" />
+
+    <TextView
+        android:id="@+id/seven_cup_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3sp"
+        tools:text="2100"
+        android:textColor="#274461"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view7"
+        app:layout_constraintStart_toStartOf="@+id/view7" />
+
+    <ImageButton
+        android:id="@+id/minus_cup_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/small_red_circle"
+        android:onClick="minusACup"
+        android:src="@drawable/ic_minus"
+        android:tint="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/water_track_cup"
+        />
+
+    <ImageButton
+        android:id="@+id/add_cup_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/minus_cup_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/minus_cup_button"
+        app:layout_constraintTop_toTopOf="@+id/minus_cup_button"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="@drawable/small_primary_circle"
+        android:src="@drawable/ic_add"
+        android:tint="@android:color/white"
+        android:onClick="addNewCup"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minus_cup_button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="3sp"
+                    android:text="your ideal water intake "
+                    android:textColor="#4a4444"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/ideal_water_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="3sp"
+                    tools:text="2000"
+                    android:textColor="#4a4444"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="3sp"
+                    android:text="ml"
+                    android:textColor="#4a4444"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="3sp"
+                    android:text="your goal water intake "
+                    android:textColor="#4a4444"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/goal_water"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="3sp"
+                    android:textColor="#4a4444"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="1500" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="3sp"
+                    android:text="ml"
+                    android:textColor="#4a4444"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/continue_tbn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/login_button_background"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.31"
+        android:onClick="save"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

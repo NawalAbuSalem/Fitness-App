@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/performance"
+        android:textColor="@color/darkGreyBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#B7B6B6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.242" />
+
+
+    <ProgressBar
+        android:id="@+id/this_Saturday_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="83dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="38dp"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/this_week_progress_background"
+        android:progressTint="@color/fadedRed"
+        android:rotation="270"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/last_Saturday_progress" />
+
+    <ProgressBar
+        android:id="@+id/last_Saturday_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="83dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="38dp"
+        android:max="100"
+        android:progress="70"
+        android:progressDrawable="@drawable/last_week_progress_background"
+        android:progressTint="#b7b6b6"
+        android:rotation="270"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/this_Sunrday_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="83dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="38dp"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/this_week_progress_background"
+        android:progressTint="@color/fadedRed"
+        android:rotation="270"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/last_Sunday_progress" />
+
+    <ProgressBar
+        android:id="@+id/last_Sunday_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="83dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="38dp"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/last_week_progress_background"
+        android:progressTint="#b7b6b6"
+        android:rotation="270"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@id/this_Saturday_progress" />
+
+    <ProgressBar
+        android:id="@+id/this_monday_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="83dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="38dp"
+        android:max="100"
+        android:progress="90"
+        android:progressDrawable="@drawable/this_week_progress_background"
+        android:progressTint="@color/fadedRed"
+        android:rotation="270"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/last_monday_progress" />
+
+    <ProgressBar
+        android:id="@+id/last_monday_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="83dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="38dp"
+        android:max="100"
+        android:progress="70"
+        android:progressDrawable="@drawable/last_week_progress_background"
+        android:progressTint="#b7b6b6"
+        android:rotation="270"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@id/this_Sunrday_progress" />
+
+    <ProgressBar
+        android:id="@+id/this_tuesday_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="83dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="38dp"
+        android:max="100"
+        android:progress="90"
+        android:progressDrawable="@drawable/this_week_progress_background"
+        android:progressTint="@color/fadedRed"
+        android:rotation="270"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/last_tuesday_progress" />
+
+    <ProgressBar
+        android:id="@+id/last_tuesday_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="83dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="38dp"
+        android:max="70"
+        android:progress="100"
+        android:progressDrawable="@drawable/last_week_progress_background"
+        android:progressTint="#b7b6b6"
+        android:rotation="270"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@id/this_monday_progress" />
+
+    <ProgressBar
+        android:id="@+id/this_wednesday_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="83dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="38dp"
+        android:max="90"
+        android:progress="100"
+        android:progressDrawable="@drawable/this_week_progress_background"
+        android:progressTint="@color/fadedRed"
+        android:rotation="270"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/last_wednesday_progress" />
+
+    <ProgressBar
+        android:id="@+id/last_wednesday_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="83dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="38dp"
+        android:max="100"
+        android:progress="70"
+        android:progressDrawable="@drawable/last_week_progress_background"
+        android:progressTint="#b7b6b6"
+        android:rotation="270"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@id/this_tuesday_progress" />
+
+    <ProgressBar
+        android:id="@+id/this_thursday_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="83dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="38dp"
+        android:max="100"
+        android:progress="90"
+        android:progressDrawable="@drawable/this_week_progress_background"
+        android:progressTint="@color/fadedRed"
+        android:rotation="270"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/last_thursday_progress" />
+
+    <ProgressBar
+        android:id="@+id/last_thursday_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="83dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="38dp"
+        android:max="100"
+        android:progress="70"
+        android:progressDrawable="@drawable/last_week_progress_background"
+        android:progressTint="#b7b6b6"
+        android:rotation="270"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@id/this_wednesday_progress" />
+
+    <ProgressBar
+        android:id="@+id/this_friday_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="83dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="38dp"
+        android:max="100"
+        android:progress="90"
+        android:progressDrawable="@drawable/this_week_progress_background"
+        android:progressTint="@color/fadedRed"
+        android:rotation="270"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/last_friday_progress" />
+
+    <ProgressBar
+        android:id="@+id/last_friday_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="83dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="38dp"
+        android:max="100"
+        android:progress="70"
+        android:progressDrawable="@drawable/last_week_progress_background"
+        android:progressTint="#b7b6b6"
+        android:rotation="270"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/this_thursday_progress" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/s"
+        android:textColor="@color/darkGreyBlue"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/last_monday_progress"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/last_Saturday_progress"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/s"
+        android:textColor="@color/darkGreyBlue"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/last_tuesday_progress"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="@+id/this_Sunrday_progress"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/m"
+        android:textColor="#003c7f"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/last_wednesday_progress"
+        app:layout_constraintStart_toStartOf="@+id/this_monday_progress"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/t"
+        android:textColor="@color/darkGreyBlue"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/last_thursday_progress"
+        app:layout_constraintStart_toStartOf="@+id/this_tuesday_progress"
+        app:layout_constraintTop_toTopOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/w"
+        android:textColor="@color/darkGreyBlue"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/last_wednesday_progress"
+        app:layout_constraintStart_toStartOf="@+id/this_wednesday_progress"
+        app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/t"
+        android:textColor="@color/darkGreyBlue"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/last_thursday_progress"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/this_thursday_progress"
+        app:layout_constraintTop_toTopOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/f"
+        android:textColor="@color/darkGreyBlue"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/last_friday_progress"
+        app:layout_constraintStart_toStartOf="@+id/this_friday_progress"
+        app:layout_constraintTop_toTopOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/darkGreyBlue"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView34"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30"
+        android:text="@string/total_steps"/>
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="2sp"
+        android:textColor="@color/darkGreyBlue"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView32"
+        app:layout_constraintEnd_toStartOf="@+id/textView35"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView32"
+        app:layout_constraintTop_toTopOf="@+id/textView32"
+        android:text="@string/week_average" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/darkGreyBlue"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView34"
+        app:layout_constraintTop_toTopOf="@+id/textView34"
+        android:text="@string/last_week"
+         />
+
+    <TextView
+        android:id="@+id/week_total_steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="3sp"
+        android:text="50.000"
+        android:textColor="#274461"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/textView32"
+        app:layout_constraintStart_toStartOf="@+id/textView32"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/week_average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="3sp"
+        android:text="50.000"
+        android:textColor="#274461"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/textView34"
+        app:layout_constraintStart_toStartOf="@+id/textView34"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <TextView
+        android:id="@+id/last_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="3sp"
+        android:text="-30%"
+        android:textColor="#f00"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/textView35"
+        app:layout_constraintStart_toStartOf="@+id/textView35"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+</androidx.constraintlayout.widget.ConstraintLayout>

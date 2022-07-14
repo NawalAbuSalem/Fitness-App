@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/person_resend" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resend_description"
+        android:textSize="14dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:textColor="#233249"
+        />
+    <EditText
+        android:id="@+id/resend_phone_number_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="phone"
+        android:background="@drawable/edit_text_background"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:hint="@string/phone_number"
+        />
+    <Button
+        android:id="@+id/resend_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/login_button_background"
+        android:text="@string/resend"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+
+
+</LinearLayout>

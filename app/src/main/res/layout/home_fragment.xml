@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/hello"
+            android:textColor="@color/darkGreyBlue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/home_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="4sp"
+            tools:text="Hanin."
+            android:textColor="@color/darkGreyBlue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="2sp"
+            android:text=""
+            android:textColor="#274461"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/test_running" />
+
+        <ProgressBar
+            android:id="@+id/home_progressBar_main_goal"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:max="100"
+            android:progressTint="@color/goldenRod"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/main_goal"
+            android:textColor="@color/darkGreyBlue"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/home_percentage_main_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="2sp"
+            android:text="0%"
+            android:textColor="@color/darkGreyBlue"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/home_progressBar_main_goal"
+            app:layout_constraintEnd_toEndOf="@+id/home_progressBar_main_goal" />
+
+
+        <TextView
+            android:id="@+id/home_reminded_main_goal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="3sp"
+            android:textColor="@color/darkGreyBlue"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="@+id/home_progressBar_main_goal"
+            app:layout_constraintTop_toBottomOf="@+id/home_progressBar_main_goal" />
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/state"
+            android:textColor="@color/darkGreyBlue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_reminded_main_goal" />
+
+        <TextView
+            android:id="@+id/edit_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/edit"
+            android:textColor="@color/blueGreen"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/state"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/state" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/state">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/currentbmi"
+                    android:textColor="@color/darkGreyBlue"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/home_weight_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="end"
+                    android:text="normal weight"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/blueGreen"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/flow_low_backgroud" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/seaweed" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/orangePink" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/flow_high_background" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/home_bmi_pointer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_arrow_drop_up"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+                <TextView
+                    android:id="@+id/home_bmi_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textColor="@color/darkGreyBlue"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@+id/home_bmi_pointer"
+                    app:layout_constraintStart_toStartOf="@+id/home_bmi_pointer"
+                    app:layout_constraintTop_toBottomOf="@+id/home_bmi_pointer" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="25sp"
+            android:text="@string/daily_goals"
+            android:textColor="@color/darkGreyBlue"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayout2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+            <LinearLayout
+                android:id="@+id/weight_center_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_run" />
+
+                <TextView
+                    android:id="@+id/home_running_duration_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5sp"
+                    android:text="0"
+                    android:textColor="@color/darkGreyBlue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:lineSpacingExtra="4sp"
+                    android:text="@string/min"
+                    android:textColor="@color/darkGreyBlue"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/v24"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="0"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="130dp"
+                tools:layout_editor_absoluteY="70dp" />
+
+            <View
+                android:id="@+id/v23"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="15"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v22"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="30"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v21"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="45"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v20"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="60"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v19"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="75"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v18"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="90"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v17"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="105"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v16"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="120"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v15"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="135"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v14"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="150"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v13"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="165"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v12"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="180"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v11"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="195"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v10"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="210"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v9"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="225"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v8"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="240"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v7"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="255"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v6"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="270"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v5"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="285"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v4"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="300"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v3"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="315"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="330"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/weight_center_view"
+                app:layout_constraintCircleAngle="345"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout">
+
+            <LinearLayout
+                android:id="@+id/center_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintCircleRadius="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_muscular" />
+
+                <TextView
+                    android:id="@+id/home_goals_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="0%"
+                    android:textColor="@color/darkGreyBlue"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="sans-serif"
+                    android:letterSpacing="0.01"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/goals"
+                    android:textColor="@color/darkGreyBlue"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/vx"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="0"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="130dp"
+                tools:layout_editor_absoluteY="70dp" />
+
+            <View
+                android:id="@+id/vw"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="15"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vv"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="30"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vu"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="45"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vt"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="60"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vs"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="75"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vr"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="90"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vq"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="105"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="120"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vo"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="135"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vn"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="150"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vm"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="165"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vl"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="180"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vk"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="195"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vj"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="210"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vi"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="225"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vh"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="240"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vg"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="255"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vf"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="270"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/ve"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="285"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vd"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="300"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vc"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="315"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/vb"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="330"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/va"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/inactive_dot"
+                app:layout_constraintCircle="@id/center_view2"
+                app:layout_constraintCircleAngle="345"
+                app:layout_constraintCircleRadius="50dp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="25sp"
+            android:text="@string/topics_for_you"
+            android:textColor="@color/darkGreyBlue"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        <LinearLayout
+            android:id="@+id/recipes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/home_step"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/topic_background"
+                android:padding="15dp"
+                android:src="@drawable/ic_recipe"
+                android:tint="@color/darkGreyBlue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="33sp"
+                android:text="@string/recipes"
+                android:textColor="@color/darkGreyBlue"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/recipes"
+            app:layout_constraintEnd_toStartOf="@+id/water_track"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/recipes"
+            app:layout_constraintTop_toTopOf="@+id/recipes">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/topic_background"
+                android:padding="15dp"
+                android:src="@drawable/ic_running_man"
+                android:tint="@color/darkGreyBlue"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="33sp"
+                android:text="@string/steps"
+                android:textColor="@color/darkGreyBlue"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/water_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/home_step"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_step"
+            app:layout_constraintTop_toTopOf="@+id/home_step">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/topic_background"
+                android:padding="15dp"
+                android:src="@drawable/ic_water"
+                android:tint="@color/darkGreyBlue"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="33sp"
+                android:text="@string/water"
+                android:textColor="@color/darkGreyBlue"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="25sp"
+            android:text="@string/discover"
+            android:textColor="@color/darkGreyBlue"
+            android:textSize="16sp"
+
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipes" />
+
+        <TextView
+            android:id="@+id/home_see_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="27sp"
+            android:text="@string/see_all"
+            android:textColor="@color/blueGreen"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/water_track" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/consult_doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:layout_weight="3"
+                            android:src="@drawable/ic_doctor" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/consult_doctor"
+                            android:textColor="@color/greyishBrown"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/health_calculator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:layout_weight="3"
+                            android:src="@drawable/ic_weighing_scale_1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/health_calculator"
+                            android:textColor="@color/greyishBrown"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/leader_board"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:layout_weight="3"
+                            android:src="@drawable/ic_sports_and_competition" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/home_gym"
+                            android:textColor="@color/greyishBrown"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

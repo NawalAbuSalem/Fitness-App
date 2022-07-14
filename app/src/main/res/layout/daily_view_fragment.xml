@@ -1,0 +1,1314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/performance"
+            android:textColor="@color/darkGreyBlue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/Saturday_progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="50dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#F0F0F0"
+            android:max="100"
+            android:progress="80"
+            android:progressDrawable="@drawable/progress_background"
+            android:progressTint="@color/primaryColor"
+            android:rotation="270"
+            app:layout_constraintEnd_toStartOf="@+id/sunday_progressBar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <ProgressBar
+            android:id="@+id/sunday_progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="50dp"
+            android:layout_height="13dp"
+            android:backgroundTint="#F0F0F0"
+            android:max="100"
+            android:progress="20"
+            android:progressDrawable="@drawable/progress_background"
+            android:progressTint="@color/primaryColor"
+            android:rotation="270"
+            app:layout_constraintBottom_toBottomOf="@+id/Saturday_progressBar"
+            app:layout_constraintEnd_toStartOf="@+id/monday_progressBar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/Saturday_progressBar"
+            app:layout_constraintTop_toTopOf="@+id/Saturday_progressBar"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ProgressBar
+            android:id="@+id/monday_progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="50dp"
+            android:layout_height="13dp"
+            android:backgroundTint="#F0F0F0"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress_background"
+            android:progressTint="@color/primaryColor"
+            android:rotation="270"
+            app:layout_constraintBottom_toBottomOf="@+id/sunday_progressBar"
+            app:layout_constraintEnd_toStartOf="@+id/tuesday_progressBar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/sunday_progressBar"
+            app:layout_constraintTop_toTopOf="@+id/sunday_progressBar"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ProgressBar
+            android:id="@+id/tuesday_progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="50dp"
+            android:layout_height="13dp"
+            android:backgroundTint="#F0F0F0"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_background"
+            android:progressTint="@color/primaryColor"
+            android:rotation="270"
+            app:layout_constraintBottom_toBottomOf="@+id/monday_progressBar"
+            app:layout_constraintEnd_toStartOf="@+id/wednesday_progressBar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/monday_progressBar"
+            app:layout_constraintTop_toTopOf="@+id/monday_progressBar" />
+
+        <ProgressBar
+            android:id="@+id/wednesday_progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="50dp"
+            android:layout_height="13dp"
+            android:backgroundTint="#F0F0F0"
+            android:max="100"
+            android:progress="70"
+            android:progressDrawable="@drawable/progress_background"
+            android:progressTint="@color/primaryColor"
+            android:rotation="270"
+            app:layout_constraintBottom_toBottomOf="@+id/tuesday_progressBar"
+            app:layout_constraintEnd_toStartOf="@+id/thursday_progressBar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tuesday_progressBar"
+            app:layout_constraintTop_toTopOf="@+id/tuesday_progressBar" />
+
+        <ProgressBar
+            android:id="@+id/thursday_progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="50dp"
+            android:layout_height="13dp"
+            android:backgroundTint="#F0F0F0"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_background"
+            android:progressTint="@color/primaryColor"
+            android:rotation="270"
+            app:layout_constraintBottom_toBottomOf="@+id/wednesday_progressBar"
+            app:layout_constraintEnd_toStartOf="@+id/friday_progressBar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/wednesday_progressBar"
+            app:layout_constraintTop_toTopOf="@+id/wednesday_progressBar" />
+
+        <ProgressBar
+            android:id="@+id/friday_progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="50dp"
+            android:layout_height="13dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="#F0F0F0"
+            android:max="100"
+            android:progress="20"
+            android:progressDrawable="@drawable/progress_background"
+            android:progressTint="@color/primaryColor"
+            android:rotation="270"
+            app:layout_constraintBottom_toBottomOf="@+id/thursday_progressBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/thursday_progressBar"
+            app:layout_constraintTop_toTopOf="@+id/thursday_progressBar" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/s"
+            android:textColor="#003c7f"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/monday_progressBar"
+            app:layout_constraintStart_toStartOf="@+id/sunday_progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/sunday_progressBar" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/t"
+            android:textColor="#003c7f"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/wednesday_progressBar"
+            app:layout_constraintStart_toStartOf="@+id/tuesday_progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/tuesday_progressBar" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/s"
+            android:textColor="#003c7f"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/sunday_progressBar"
+            app:layout_constraintStart_toStartOf="@+id/Saturday_progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/Saturday_progressBar" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/w"
+            android:textColor="#003c7f"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/thursday_progressBar"
+            app:layout_constraintStart_toStartOf="@+id/wednesday_progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/wednesday_progressBar" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/f"
+            android:textColor="#003c7f"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/friday_progressBar"
+            app:layout_constraintStart_toStartOf="@+id/friday_progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/friday_progressBar" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/t"
+            android:textColor="#003c7f"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/friday_progressBar"
+            app:layout_constraintStart_toStartOf="@+id/thursday_progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/thursday_progressBar" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/m"
+            android:textColor="#003c7f"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/tuesday_progressBar"
+            app:layout_constraintStart_toStartOf="@+id/monday_progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/monday_progressBar" />
+
+        <ImageView
+            android:id="@+id/saturday_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/textView18"
+            app:layout_constraintStart_toStartOf="@+id/textView18"
+            app:layout_constraintTop_toBottomOf="@+id/textView18"
+            app:srcCompat="@drawable/ic_slightly_smilling"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/tuesday_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/textView21"
+            app:layout_constraintStart_toStartOf="@+id/textView21"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <ImageView
+            android:id="@+id/friday_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/textView24"
+            app:layout_constraintStart_toStartOf="@+id/textView24"
+            app:layout_constraintTop_toBottomOf="@+id/textView24"
+            app:srcCompat="@drawable/ic_sad"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/thursday_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/textView23"
+            app:layout_constraintStart_toStartOf="@+id/textView23"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+        <ImageView
+            android:id="@+id/wednesday_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/textView22"
+            app:layout_constraintStart_toStartOf="@+id/textView22"
+            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            app:srcCompat="@drawable/ic_slightly_smilling"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/monday_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/textView20"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <ImageView
+            android:id="@+id/sunday_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/textView19"
+            app:layout_constraintStart_toStartOf="@+id/textView19"
+            app:layout_constraintTop_toBottomOf="@+id/textView19"
+            app:srcCompat="@drawable/ic_sad"
+            tools:ignore="VectorDrawableCompat" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView3"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/materialCardView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/materialCardView2"
+            app:layout_constraintTop_toTopOf="@+id/materialCardView2">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/weight_txt"
+                    android:textColor="@color/darkGreyBlue"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_weight"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout
+                    android:id="@+id/weightcenter_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="29dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_weight">
+
+
+                    <TextView
+                        android:id="@+id/daily_weight_percentage_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="5sp"
+                        android:text="5%"
+                        android:textColor="@color/darkGreyBlue"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/daily_weight_general_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:lineSpacingExtra="4sp"
+                        android:text="@string/increase"
+                        android:textColor="@color/darkGreyBlue"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/vw24"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="0"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="70dp" />
+
+                <View
+                    android:id="@+id/vw23"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="15"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw22"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="30"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw21"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="45"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw20"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="60"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw19"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="75"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw18"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="90"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw17"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="105"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw16"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="120"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw15"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="135"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw14"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="150"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw13"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="165"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw12"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="180"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw11"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="195"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw10"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="210"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw9"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="225"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw8"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="240"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw7"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="255"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw6"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="270"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw5"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="285"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw4"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="300"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="315"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="330"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vw1"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weightcenter_view"
+                    app:layout_constraintCircleAngle="345"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView2"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/materialCardView3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline5">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/calories"
+                    android:textColor="@color/darkGreyBlue"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_path"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout
+                    android:id="@+id/weight_center_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="29dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewweight">
+
+
+                    <TextView
+                        android:id="@+id/daily_calories_amount_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="5sp"
+                        android:text="1500"
+                        android:textColor="@color/darkGreyBlue"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:lineSpacingExtra="4sp"
+                        android:text="@string/kcal"
+                        android:textColor="@color/darkGreyBlue"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/vc24"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="0"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="70dp" />
+
+                <View
+                    android:id="@+id/vc23"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="15"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc22"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="30"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc21"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="45"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc20"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="60"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc19"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="75"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc18"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="90"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc17"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="105"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc16"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="120"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc15"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="135"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc14"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="150"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc13"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="165"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc12"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="180"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc11"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="195"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc10"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="210"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc9"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="225"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc8"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="240"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc7"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="255"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc6"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="270"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc5"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="285"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc4"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="300"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="315"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="330"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vc1"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/weight_center_view"
+                    app:layout_constraintCircleAngle="345"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView11"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="13dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintStart_toStartOf="@+id/materialCardView2"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView2">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView_steps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/steps"
+                    android:textColor="@color/darkGreyBlue"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_steps"
+                    android:tint="@color/goldenRod"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout
+                    android:id="@+id/stepscenter_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="29dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_steps">
+
+
+                    <TextView
+                        android:id="@+id/daily_steps_duration_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="5sp"
+                        android:text="2.02"
+                        android:textColor="@color/darkGreyBlue"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:lineSpacingExtra="4sp"
+                        android:text="@string/min"
+                        android:textColor="@color/darkGreyBlue"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/vs24"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="0"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="70dp" />
+
+                <View
+                    android:id="@+id/vs23"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="15"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs22"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="30"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs21"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="45"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs20"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="60"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs19"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="75"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs18"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="90"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs17"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="105"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs16"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="120"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs15"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="135"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs14"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="150"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs13"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="165"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs12"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="180"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs11"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="195"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs10"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="210"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs9"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="225"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs8"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="240"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs7"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="255"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs6"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="270"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs5"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="285"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs4"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="300"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="315"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="330"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+
+                <View
+                    android:id="@+id/vs1"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/inactive_dot"
+                    app:layout_constraintCircle="@id/stepscenter_view"
+                    app:layout_constraintCircleAngle="345"
+                    app:layout_constraintCircleRadius="50dp"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView4"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/materialCardView11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/materialCardView11"
+            app:layout_constraintTop_toTopOf="@+id/materialCardView11"
+            app:layout_constraintVertical_bias="0.0">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/water"
+                android:textColor="@color/darkGreyBlue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_water"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

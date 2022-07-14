@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.DiscoverActivity"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+ <ImageView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/ic_arrow_back"
+     android:tint="@color/darkGreyBlue"
+     android:layout_margin="15dp"
+     android:onClick="goToHomeActivity"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif"
+            android:padding="5dp"
+            android:text="@string/discover"
+            android:textColor="@color/darkGreyBlue"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_doctor"
+        android:layout_width="0dp"
+        android:layout_height="155dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_health_calculator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@drawable/ic_doctor"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif"
+            android:padding="5dp"
+            android:text="@string/consult_doctor"
+            android:textColor="@color/darkGreyBlue"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_health_calculator"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/card_doctor"
+        android:padding="10dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/card_doctor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_doctor"
+        app:layout_constraintTop_toTopOf="@+id/card_doctor">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="17sp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@drawable/ic_weighing_scale_1"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif"
+            android:padding="5dp"
+            android:text="@string/health_calculator"
+            android:textColor="#274461"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="238dp"
+            tools:layout_editor_absoluteY="206dp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_leader_board"
+        android:layout_width="0dp"
+        android:layout_height="155dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="14dp"
+        android:layout_toEndOf="@+id/card_doctor"
+        android:padding="10dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_events"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/card_doctor"
+        app:layout_constraintTop_toBottomOf="@+id/card_doctor">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="17sp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@drawable/ic_sports_and_competition"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif"
+            android:padding="5dp"
+            android:text="@string/home_gym"
+            android:textColor="@color/darkGreyBlue"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_events"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_toEndOf="@+id/card_doctor"
+        android:padding="10dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/card_leader_board"
+        app:layout_constraintEnd_toEndOf="@+id/card_health_calculator"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_leader_board"
+        app:layout_constraintTop_toTopOf="@+id/card_leader_board">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="17sp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@drawable/ic_calendar"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/events"
+            android:textColor="@color/darkGreyBlue"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_challenge"
+        android:layout_width="0dp"
+        android:layout_height="155dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/card_doctor"
+        android:padding="10dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/card_leader_board"
+        app:layout_constraintStart_toStartOf="@+id/card_leader_board"
+        app:layout_constraintTop_toBottomOf="@+id/card_leader_board">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="17sp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@drawable/ic_badge"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/challenges"
+            android:textColor="@color/darkGreyBlue"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="155dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/card_doctor"
+        android:padding="10dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/card_challenge"
+        app:layout_constraintEnd_toEndOf="@+id/card_events"
+        app:layout_constraintStart_toStartOf="@+id/card_events"
+        app:layout_constraintTop_toTopOf="@+id/card_challenge">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="17sp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@drawable/ic_trophy"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif"
+            android:padding="5dp"
+            android:text="@string/leaderboard"
+            android:textColor="@color/darkGreyBlue"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

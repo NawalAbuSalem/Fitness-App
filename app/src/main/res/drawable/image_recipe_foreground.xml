@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@drawable/recipe_top"
+      android:bottom="430dp"/>
+<item android:drawable="@drawable/recipe_bottom"
+    />
+</layer-list>
