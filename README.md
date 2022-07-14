@@ -1,9 +1,9 @@
 # Fitness-App
-You Can is an android application that enables the user to add a daily goal that must be achieved during the application(adding daily distance to walk, daily water amount to drink, and daily macros) and target goal actually I used google firebase firestore to store user 
+<b>You Can</b> is an android application that enables the user to add a daily goal that must be achieved during the application(adding daily distance to walk, daily water amount to drink, and daily macros) and target goal actually I used google firebase firestore to store user 
 data and then google fit to track walking (duration, burned calories and number of steps).  
 Through the app, you can search for a healthy meal, I used an open-source API for searching and finally, the app sends a reminder to drink water according to the user's target amount.
 
-Technical skills:
+# Technical skills:
 
 1. Room Database.
 2. Firebase FireStore.
@@ -17,6 +17,7 @@ Technical skills:
 10. MVVM.
 11. Live Data.
 12. Edamam Recipes API.
+13. Gilde.
 
 ![Screenshot_2020-02-03-18-02-22-862_com nns youcan](https://user-images.githubusercontent.com/56439567/179028624-3b9e9256-8d0d-4deb-81da-2328b14fed67.jpg)
 ![Screenshot_2020-02-03-18-04-17-965_com nns youcan](https://user-images.githubusercontent.com/56439567/179028684-3669ebac-47e7-4082-b12b-aff9749f2111.jpg)
