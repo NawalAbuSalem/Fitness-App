@@ -17,7 +17,7 @@ Through the app, you can search for a healthy meal, I used an open-source API fo
 10. MVVM.
 11. Live Data.
 12. Edamam Recipes API.
-13. Gilde.
+13. Glide.
 
 ![Screenshot_2020-02-03-18-02-22-862_com nns youcan](https://user-images.githubusercontent.com/56439567/179028624-3b9e9256-8d0d-4deb-81da-2328b14fed67.jpg)
 ![Screenshot_2020-02-03-18-04-17-965_com nns youcan](https://user-images.githubusercontent.com/56439567/179028684-3669ebac-47e7-4082-b12b-aff9749f2111.jpg)
