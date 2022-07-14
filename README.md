@@ -26,4 +26,4 @@ Through the app, you can search for a healthy meal, I used an open-source API fo
 ![5](https://user-images.githubusercontent.com/56439567/179028914-460cd93d-2e62-411c-864c-fb255c57f293.jpg)
 ![6](https://user-images.githubusercontent.com/56439567/179028924-c3ec11b0-74fe-42fa-8b0f-0c0afe0af73e.jpg)
 ![7](https://user-images.githubusercontent.com/56439567/179028933-16537bfc-bafb-4131-ab43-f0b52da41b9f.jpg)
-![Uploading 8.jpg…]()
+![8](https://user-images.githubusercontent.com/56439567/179048215-cc7e87f2-bd7d-481d-86ff-e04e640239de.jpg)
